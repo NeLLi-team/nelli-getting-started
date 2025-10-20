@@ -1,0 +1,31 @@
+[project]
+name = "nelli-getting-started"
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64"]
+
+[tasks]
+nb = "jupyter lab"
+demo = "bash scripts/demo_all.sh"
+
+[dependencies]
+python = "3.11.*"
+pandas = ">=2.3.0"
+polars = ">=1.33.0"
+seaborn = ">=0.13.2"
+scikit-learn = ">=1.7.0"
+jupyterlab = "*"
+biopython = ">=1.83"
+
+# bio cli
+bbmap = "*"
+spades = "*"
+metabat2 = "*"
+semibin = "*"
+mmseqs2 = "*"
+cd-hit = "*"
+diamond = "*"
+mafft = "*"
+trimal = "*"
+iqtree = "*"
+fasttree = "*"
+taxonkit = "*"

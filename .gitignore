@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+
+# Generated data and artifacts
+data/mock/
+!data/mock/.gitkeep
+data/downloads/
+!data/downloads/.gitkeep
+clean_R1.fq.gz
+clean_R2.fq.gz
+mapped.sam
+mapped.bam
+mapped.bam.bai
+depth.txt
+spades_out/
+semibin2_out/
+bins_metabat2/
+tmp/
+db/
+db_clu/
+example.norm.faa
+aln.faa
+aln.trim.faa
+tree.nwk
+clusters.tsv
+clusters_diamond.tsv
+*.iqtree
+*.treefile
+*.log
+
+# Platform-specific
+.DS_Store
