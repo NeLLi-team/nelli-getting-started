@@ -16,9 +16,9 @@
   ```bash
   randomreads.sh ref=assembly.fna out1=R1.fq.gz out2=R2.fq.gz len=150 paired coverage=30
   ```
-* **BBTools in Docker** (optional, no local install):
+* **BBTools via container** (default in scripts):
 
   ```bash
-  docker run --rm -v $PWD:/work -w /work staphb/bbtools:latest bbmap.sh --version
+  # the repo helper routes through bryce911/bbtools:latest when local tools are absent
+  bash scripts/run_bbtools.sh bbmap.sh --version
   ```
-

@@ -8,11 +8,6 @@ echo "Downloading reference test datasets..."
 bash data/downloads.sh
 
 echo "Generating mock reads for quick demos..."
-if command -v randomreads.sh >/dev/null 2>&1; then
-    bash scripts/make_mock_reads.sh
-else
-    echo "randomreads.sh not found on PATH; running via pixi."
-    pixi run bash scripts/make_mock_reads.sh
-fi
+bash scripts/make_mock_reads.sh
 
 echo "Test data setup complete."

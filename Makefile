@@ -71,9 +71,7 @@ help:
 
 # Validate a minimal toolset for the default demo path
 env-check:
-	$(call need,randomreads.sh)
-	$(call need,bbduk.sh)
-	$(call need,bbmap.sh)
+	$(call need,docker)
 	$(call need,samtools)
 	$(call need,jgi_summarize_bam_contig_depths)
 	$(call need,spades.py)
@@ -176,4 +174,3 @@ clean:
 clean-hard: clean
 	rm -rf $(DATA_MOCK) spades_out $(BINS_MB2_DIR) $(BINS_SB2_DIR) tmp db db_clu
 	@echo "Hard clean done."
-

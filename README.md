@@ -39,3 +39,4 @@ python scripts/normalize_headers.py -i input.faa -o normalized.faa --genome-id S
 * `scripts/setup_test_data.sh` downloads reference datasets and generates mock reads.
 * Use `pixi` if you want the full CLI stack from Bioconda/conda-forge.
 * Use `uv` for Python-only tutorials and notebooks.
+* BBTools utilities run through `scripts/run_bbtools.sh`, which defaults to Docker image `bryce911/bbtools:latest` (override with `BBTOOLS_IMAGE`).
