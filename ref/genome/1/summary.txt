@@ -1,5 +1,5 @@
 #Summary
-#Generated on	Mon Oct 20 09:36:28 PDT 2025
+#Generated on	Fri Oct 24 23:46:42 PDT 2025
 #Version	5
 chroms	1
 bases	16592
@@ -8,6 +8,6 @@ undefined	16500
 contigs	2
 scaffolds	2
 interpad	500
-source	/home/fschulz/dev/nelli-getting-started/data/examples/example.fna
+source	/work/data/examples/example.fna
 bytes	131
 last modified	1760972362316
